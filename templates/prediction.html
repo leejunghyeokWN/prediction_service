@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% import "bootstrap/form.html" as wtf %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Fill in the medical data of the patient</h1>
+        {{ wtf.render_form(form) }}
+    </div>
+</div>
+{% endblock %}
